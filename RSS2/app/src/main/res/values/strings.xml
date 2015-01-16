@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My RSS</string>
+    <string name="title_activity_feed">News</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_add_channel">Add</string>
+    <string name="title_activity_description">News item</string>
+    <string name="title_activity_channels">RSS Reader</string>
+    <string name="dlgAdd_title">Add</string>
+    <string name="dlgAdd_title_edit">Edit</string>
+    <string name="btnAdd_text">Add</string>
+    <string name="btnSave_text">Save</string>
+    <string name="btnCancel_text">Cancel</string>
+    <string name="edtUrl_hint">Channel URL</string>
+    <string name="edtName_hint">Channel name</string>
+    <string name="btnDelete_text">Delete channel</string>
+    <string name="edtUrl_text">http://</string>
+
+</resources>
