@@ -3,8 +3,6 @@ package md.ifmo.ru.rss2;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -50,23 +48,5 @@ public class DescriptionActivity extends Activity {
             view.loadUrl(url);
             return true;
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.description, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_short) {
-
-        }
-        if (id == R.id.action_long) {
-
-        }
-        return super.onOptionsItemSelected(item);
     }
 }
