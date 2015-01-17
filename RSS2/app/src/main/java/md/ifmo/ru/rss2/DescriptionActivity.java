@@ -24,14 +24,16 @@ public class DescriptionActivity extends Activity {
         wv.getSettings().setDefaultTextEncodingName("utf-8");
         wv.loadDataWithBaseURL(null,getIntent().getStringExtra(FeedActivity.DESCRIPTION_EXTRA), "text/html",
                 "en_US",null);
+        final WebView browser = ((WebView) findViewById(R.id.webView2));
+        browser.setWebViewClient(new AppWebViewClient());
+        if (intent.getStringExtra(FeedActivity.LINK_EXTRA) != null) {
+            browser.loadUrl(intent.getStringExtra(FeedActivity.LINK_EXTRA));
+        }
         final Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WebView browser = ((WebView) findViewById(R.id.webView2));
-                browser.setWebViewClient(new AppWebViewClient());
                 if (intent.getStringExtra(FeedActivity.LINK_EXTRA) != null) {
-                    browser.loadUrl(intent.getStringExtra(FeedActivity.LINK_EXTRA));
                     browser.setVisibility(View.VISIBLE);
                     wv.setVisibility(View.GONE);
                     button.setVisibility(View.GONE);

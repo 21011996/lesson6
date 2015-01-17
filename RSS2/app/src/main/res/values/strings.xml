@@ -16,5 +16,6 @@
     <string name="edtName_hint">Channel name</string>
     <string name="btnDelete_text">Delete channel</string>
     <string name="edtUrl_text">http://</string>
+    <string name="action_refresh">Refresh</string>
 
 </resources>
