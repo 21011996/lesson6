@@ -28,7 +28,7 @@ public class AddingRSS extends DialogFragment {
         final boolean edit = getArguments().getBoolean(ARG_EDIT, false);
         dlgBuilder.setTitle(!edit ? getActivity().getResources().getString(R.string.dlgAdd_title) : getActivity().getResources().getString(R.string.dlgAdd_title_edit));
         LayoutInflater inflater = ((LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE));
-        @SuppressLint("InflateParams") //it's ok, inflating dialog view
+        @SuppressLint("InflateParams")
         View view = inflater.inflate(R.layout.dlg_add_layout, null);
         dlgBuilder.setView(view);
         final EditText edtTitle = (EditText)view.findViewById(R.id.edtTitle);
